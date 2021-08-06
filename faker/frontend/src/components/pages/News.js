@@ -5,9 +5,9 @@ import Sentiment from '../sentiment/Sentiment';
 import Form from '../news/Form';
 const News = () => {
     const newsContext = useContext(NewsContext)
-    const {classification,loading,title,text} = newsContext;
+    const {classification,loading,title,text,getClassification} = newsContext;
     useEffect(() => {
-
+        getClassification({"title":"helloworld","text":"helloworld"})
     },//eslint-disable-next-line
     [title]
     );

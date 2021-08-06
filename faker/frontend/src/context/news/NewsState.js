@@ -58,7 +58,7 @@ const NewsState = props => {
 
     const getClassification = (data) => {
         setLoading()
-        axios.post(`/news/`,data).then(res=>{
+        axios.post(`/api/`,data).then(res=>{
             dispatch({
                 type:GET_CLASSIFICATION,
                 payload:res.data

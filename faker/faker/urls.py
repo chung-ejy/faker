@@ -18,5 +18,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('', include('frontend.urls')),
-    path('news/',include('news.urls')),
+    path('api/',include('news.urls')),
 ]
